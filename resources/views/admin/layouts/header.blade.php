@@ -3,8 +3,8 @@
         <div class="main-header-left ">
             <div class="responsive-logo">
                 <a href="{{ url('/') }}" class="header-logo">
-                    <x-application-logo class="logo-1" alt="logo" />
-                    <x-application-logo class="dark-logo-1" alt="logo" />
+{{--                    <x-application-logo class="logo-1" alt="logo" />--}}
+{{--                    <x-application-logo class="dark-logo-1" alt="logo" />--}}
                 </a>
             </div>
             <div class="app-sidebar__toggle" data-bs-toggle="sidebar">

@@ -8,9 +8,9 @@
             <a class="desktop-logo logo-dark active" href="{{ URL('/') }}">
                 <x-application-logo   class="main-logo" alt="logo"/></a>
             <a class="logo-icon mobile-logo icon-light active" href="{{ URL('/') }}">
-                <x-application-icon   class="logo" alt="logo"/>
+                <x-application-logo   class="logo" alt="logo"/>
             <a class="logo-icon mobile-logo icon-dark active" href="{{ URL('/') }}">
-                <x-application-icon   class="logo" alt="logo"/>
+                <x-application-logo   class="logo" alt="logo"/></a>
         </div>
         <div class="main-sidemenu">
        <x-admin.auth-data/>
@@ -22,8 +22,12 @@
                 <li class="side-item side-item-category">إدارة المحتوى</li>
                 <x-admin.side-bar name="news" lable="الأخبار" :home="route('admin.news.index')" :create="route('admin.news.create')" icon="fe fe-file"/>
                 <x-admin.side-bar name="categories" lable="الاقسام" :home="route('admin.categories.index')" :create="route('admin.categories.create')" icon="fe fe-tag"/>
-                <x-admin.side-bar name="posterAdress" lable="الاماكن" :home="route('admin.posterAdress.index')" :create="route('admin.posterAdress.create')" icon="fe fe-users"/>
-                <x-admin.side-bar name="poster" lable="الاعلانات" :home="route('admin.poster.index')" :create="route('admin.poster.create')" icon="fe fe-users"/>
+                <x-admin.side-bar name="posterAdress" lable="الاماكن" :home="route('admin.posterAdress.index')" :create="route('admin.posterAdress.create')" icon="fe fe-map-pin"/>
+                <x-admin.side-bar name="poster" lable="الاعلانات" :home="route('admin.poster.index')" :create="route('admin.poster.create')" icon="fe fe-image"/>
+                <x-admin.side-bar name="fastNews" lable="الاخبار العاجلة" :home="route('admin.fastNews.index')" :create="route('admin.fastNews.create')" icon="fe fe-globe"/>
+                <x-admin.side-bar name="video" lable="الفيديوهات" :home="route('admin.video.index')" :create="route('admin.video.create')" icon="fe fe-video"/>
+                <x-admin.side-bar name="image" lable=" الصور" :home="route('admin.image.index')" :create="route('admin.image.create')" icon="fe fe-image"/>
+                <x-admin.side-bar name="live" lable="البث المباشر" :home="route('admin.live.index')" :create="route('admin.live.create')" icon="fe fe-share"/>
 
 
             </ul>

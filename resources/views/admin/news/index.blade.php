@@ -23,22 +23,23 @@
                 <td><x-page.td-image :image="$i->image"/></td>
 
                 <td>{{ $i->authar }}</td>
-                <td>{{  Str::limit($i->title ,100, '...')}}</td>
+                <td>{{  Str::limit($i->title ,50, '...')}}</td>
                 <td>{{ $i->category->name }}</td>
                 <form action="{{ route('admin.news_push',$i->id) }}" method="POST">
                     @csrf
                     @method('put')
                     <td>@if ($i->status == 'publish')
-                        <button class="btn btn-success btn-sm w-100">  ارشفة الخبر   <span class="fe fe-download"></button>
+                        <button class="btn btn-success btn-sm w-100">  ارشفة الخبر   <span class="fe fe-download"></span>
+                        </button>
                     @endif
                 @if ($i->status != 'publish')
-                <button class="btn btn-warning btn-sm w-100"> نشر الخبر    <span class="fe fe-upload"> </button>
+                <button class="btn btn-warning btn-sm w-100"> نشر الخبر    <span class="fe fe-upload"></span></button>
                 @endif
                 </td>
                 </form>
                 <td>{{ $i->created_at->format('y-m-d/h:m') }}</td>
                 <td><x-page.td-actions :id="$i->id" name="news"/>
-                <a class="btn  btn-sm btn-success" href="{{ route('admin.news.show', $i->id) }}"><span class="fe fe-eye"></a>
+                <a class="btn  btn-sm btn-success" href="{{ route('admin.news.show', $i->id) }}"><span class="fe fe-eye"></span></a>
                 </td>
               </tr>
             @endforeach

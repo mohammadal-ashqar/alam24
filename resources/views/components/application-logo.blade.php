@@ -1,1 +1,1 @@
-<img src="{{ asset('cms/assets/img/logo aman.png') }}"{{ $attributes }}>
+<img src="{{ asset('cms/assets/img/علم 24 مفرغ ملون (1).png') }}"{{ $attributes }}>

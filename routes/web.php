@@ -20,12 +20,13 @@ use Illuminate\Support\Facades\Route;
 // });
 
 
-Route::get('/admin', function () {
-    return view('admin.index');
-})->middleware(['auth', 'verified'])->name('dashboard');
+// Route::get('/admin', function () {
+//     return view('admin.index');
+// })->middleware(['auth', 'verified'])->name('dashboard');
 
 require __DIR__.'/auth.php';
 require __DIR__.'/admin.php';
+require __DIR__.'/alam24.php';
 
 
 

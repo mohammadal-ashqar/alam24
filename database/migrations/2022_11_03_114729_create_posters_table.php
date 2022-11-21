@@ -16,7 +16,8 @@ return new class extends Migration
         Schema::create('posters', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->string('image');
+            $table->string('route');
+            $table->json('images');
             $table->foreignId('poster_adress_id')
             ->constrained('poster_adresses')
             ->cascadeOnDelete();

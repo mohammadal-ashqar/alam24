@@ -153,11 +153,12 @@
     <script>
         tinymce.init({
             selector: 'textarea',
+            content_css: 'tinymce-4',
             plugins: [
                 'a11ychecker', 'advlist', 'advcode', 'advtable', 'autolink', 'checklist', 'export',
                 'lists', 'link', 'charmap', 'preview', 'searchreplace', 'visualblocks',
                 'powerpaste', 'fullscreen', 'formatpainter', 'insertdatetime', 'table', 'help',
-                'wordcount' ,'media'
+                'wordcount' ,'media','image'
             ],
             toolbar: 'undo redo | formatpainter casechange blocks | bold italic backcolor | ' +
                 'alignleft aligncenter alignright alignjustify | ' +

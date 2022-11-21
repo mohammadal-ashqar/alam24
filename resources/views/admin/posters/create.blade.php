@@ -6,8 +6,9 @@
         @csrf
         <x-form.card card_lable="اضافة اعلان ">
 
-            <x-form.input name="image" lable="صورة" type="file" />
+            <x-form.input name="images[]" lable="صور" type="file" multiple required/>
             <x-form.input name="name" lable="نبذة مختصرة" />
+            <x-form.input name="route" lable="الشركة المعلنة" />
             <x-form.select name="poster_adress_id" lable="القسم">
                 <select name="poster_adress_id" class="form-select ">
                     <option>اختر القسم </option>

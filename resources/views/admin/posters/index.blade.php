@@ -8,7 +8,6 @@
         </x-slot>
         <x-slot name="th">
           <th>#</th>
-          <th>صورة</th>
           <th>نبذة مختصرة</th>
           <th>المكان</th>
           <th> تاريخ اخر تعديل</th>
@@ -18,8 +17,6 @@
             @foreach ($posters as $i)
             <tr>
                 <td>{{ $loop->iteration }}</td>
-                <td><x-page.td-image :image="$i->image"/></td>
-
                 <td>{{ $i->name }}</td>
                 <td>{{ $i->poster_adress->name }}</td>
                 <td>{{ $i->created_at->format('y-m-d/h:m') }}</td>

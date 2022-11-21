@@ -6,8 +6,9 @@
         @csrf
         @method('PUT')
         <x-form.card card_lable="تعديل الاعلان">
-            <x-form.input name="image" lable="صورة" type="file"/>
+            <x-form.input name="images[]" lable="صور" type="file" multiple />
             <x-form.input name="name" lable="العنوان" :value="$poster->name"/>
+                <x-form.input name="route" lable="رابط الشركة " :value="$poster->route"/>
             <x-form.select name="poster_adress_id" lable="القسم" >
                     <select name="poster_adress_id" class="form-select ">
                         <option>اختر القسم </option>

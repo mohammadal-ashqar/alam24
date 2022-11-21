@@ -46,7 +46,7 @@
 
             <div class="card custom-card overflow-hidden">
                 <div class="card-header border-bottom">
-                    <h3 class="card-title mb-1">Categories</h3>
+                    <h3 class="card-title mb-1">الاقسام</h3>
                 </div>
                 <div class="card-body">
                     <div>
@@ -59,7 +59,7 @@
             </div>
             <div class="card custom-card overflow-hidden">
                 <div class="card-header border-bottom">
-                    <h3 class="card-title mb-1">Gallery</h3>
+                    <h3 class="card-title mb-1">الصور</h3>
                 </div>
                 <div class="card-body">
                     <div class="text-center demo-gallery">

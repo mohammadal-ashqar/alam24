@@ -14,8 +14,9 @@ class News extends Model
     public static function rules()
     {
         return [
-            'title'=>'required',
-            'image'=>'required|image|mimes:jpeg,jpg,png',
+            'title'=>'required|max:255',
+            'image'=>'required|image|mimes:jpeg,jpg,png|max:1024',
+            'files*'=>'nullable|image|mimes:jpeg,jpg,png|max:5000',
             'status'=>'required',
             'content'=>'required',
             'authar'=>'required|max:30',
@@ -26,8 +27,9 @@ class News extends Model
     public static function updateRules()
     {
         return [
-            'title'=>'required',
-            'image'=>'nullable|image|mimes:jpeg,jpg,png',
+            'title'=>'required|max:255',
+            'image'=>'nullable|image|mimes:jpeg,jpg,png|max:1024',
+            'files*'=>'nullable|image|mimes:jpeg,jpg,png|max:5000',
             'content'=>'required',
             'status'=>'required',
             'authar'=>'required|max:30',
